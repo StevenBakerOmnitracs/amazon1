@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.1 (Python 3.9.4 on win32)" generated="20210420 17:00:46.645" rpa="false" schemaversion="2">
+<suite id="s1" name="Amazon" source="C:\Programming\robotscripts\amazon\test\amazon.robot">
+<test id="s1-t1" name="Gotta sign in">
+<kw name="Begin Web Test" library="common">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210420 17:00:46.804" level="INFO">Opening browser 'firefox' to base url 'chrome'.</msg>
+<msg timestamp="20210420 17:00:46.806" level="INFO">Firefox driver log is always forced to to: C:\Programming\robotscripts\amazon\results\geckodriver-2.log</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210420 17:00:49.906" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20210420 17:00:49.905" endtime="20210420 17:00:49.906"/>
+</kw>
+<msg timestamp="20210420 17:00:49.912" level="FAIL">SessionNotCreatedException: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+</msg>
+<status status="FAIL" starttime="20210420 17:00:46.804" endtime="20210420 17:00:49.912"/>
+</kw>
+<status status="FAIL" starttime="20210420 17:00:46.803" endtime="20210420 17:00:49.912"/>
+</kw>
+<kw name="search for products" library="amazon">
+<status status="NOT RUN" starttime="20210420 17:00:49.915" endtime="20210420 17:00:49.915"/>
+</kw>
+<kw name="select product" library="amazon">
+<status status="NOT RUN" starttime="20210420 17:00:49.916" endtime="20210420 17:00:49.916"/>
+</kw>
+<kw name="add to cart" library="amazon">
+<status status="NOT RUN" starttime="20210420 17:00:49.917" endtime="20210420 17:00:49.917"/>
+</kw>
+<kw name="begin checkout" library="amazon">
+<status status="NOT RUN" starttime="20210420 17:00:49.918" endtime="20210420 17:00:49.918"/>
+</kw>
+<kw name="End web test" library="common">
+<status status="NOT RUN" starttime="20210420 17:00:49.919" endtime="20210420 17:00:49.919"/>
+</kw>
+<doc>basic info</doc>
+<tag>smoke</tag>
+<status status="FAIL" starttime="20210420 17:00:46.802" endtime="20210420 17:00:49.920">SessionNotCreatedException: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+</status>
+</test>
+<doc>Basic info</doc>
+<status status="FAIL" starttime="20210420 17:00:46.646" endtime="20210420 17:00:49.925"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Amazon">Amazon</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
